@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Tamaño Dispositivo-->
+    <title>Ejemplo estructura página</title>
+    <link rel="stylesheet" href="EstiloCaja.css">
+    <script src="https://kit.fontawesome.com/750e89ff86.js" crossorigin="anonymous"></script>
+
+    
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" title="Ir a página principal">
+            <img src="Imagenes/Wii_U_logo_WiiU.png" />
+        </a>
+        <!--Declarar el menú-->
+        <nav id="menu">
+            <!--Creación de una lista-->
+            <ul>
+                <li><a href="index.html">Libros</a></li>
+                <li><a href="https://libros.com/">Socios</a></li>
+                <li><a href="https://libros.com/">Autores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <ul>
+            <center>
+                <h1 style="color:red;">CREAR UN FORMULARIO</h1>
+                <br /><br />
+                <form class="formulario">
+                    <label class="diseño_label" id="label_nombre" for="nombre" style="color:black; background-color:beige ">Nombre: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!--Con "for" se crea una etiqueta para enlazar-->
+                    <input class="diseño_input" type="text" id="nombre" name="txtNombre" placeholder="Ingresar nombre" maxlength="10"
+                        size="40" required><br /><br />
+                    <!--Al usar "ID" creo en enlace entre la etiqueta y el espacio par ingresar el dato-->
+                    <label class="diseño_label" >Seleccionar Documento:</label>
+                    <select class="diseño_input" name="tipo_documento">
+                        <option value="" selected="true">Seleccione un tipo de documento</option>
+                        <option value="CC">Cédula de ciudadania</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="CE">Cédula extranjeria</option>
+
+                    </select><br /><br />
+                    
+                    <label class="diseño_label">Ingresar Genero:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label >Masculino:</label><input type="radio" name="genero" value="Masculino">
+                    <label >Femenino:</label><input type="radio" name="genero" value="Femenino">
+                    <br/><br/>
+                    <label class="diseño_label" for="edad"> Edad: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="edad" name="txtEdad" min=0 max=150 size=40><br /><br />
+                    <label class="diseño_label" >Fecha de Nacimiento: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <input class="diseño_input" type="date" name="txtFecha"><br /><br />
+
+                    <label class="diseño_label" for="correo">Correo Electrónico: </label>
+                    <input class="diseño_input" type="email" id="correo" name="txtCorreo" placeholder="Ingrese su email"><br /><br />
+
+                    <label class="diseño_label">Ingresar materias: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Matemáticas</label>
+                    <input type="checkbox" name="materias" value="matematicas" checked>
+                    <!--Uso "checked" si quiero que aparezca seleccionada la opción-->
+                    <label>Física</label>
+                    <input type="checkbox" name="materias" value="fisica">
+                    <br /><br />
+
+                    <label class="diseño_label" >Observaciones</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <textarea class="diseño_input" name="observaciones" rows=3 cols=50>
+                        </textarea>
+                    <br /><br />
+
+
+                    <input class="boton_formulario" type="submit" value="Grabar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!--Con "&nbsp" agrega un espacio horizontal-->
+                    <input class="boton_formulario" type="submit" value="Cancelar">
+                </form>
+
+                <h1>LISTADO DE MATERIAS SEMANALES</h1>
+                <table class="estilo_tabla" border=1>
+                    <tr>
+                        <th>MATERIAS</th>
+                        <!--Usamos "th" para poner el texto en negrilla-->
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                    <tr>
+                        <td>FÍSICA</td>
+                        <!--Texto normal-->
+                        <td></td>
+                        <!--Para dejar espacio vacio-->
+                        <td>8 - 10 A.M.</td>
+                        <!--Con "td" tenemos el texto normal-->
+                        <td></td>
+                        <td>8 - 10 A.M.</td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </center>
+            <li><b>Lista 1</b></li>
+            <li>Lista 2</li>
+            <li>Lista 3</li>
+        </ul>
+        <br /><br /><br /><br />
+    </main>
+    <!--Área con la información principal-->
+
+    <footer>
+        <div class="estilo_div">
+            <center>
+                <p id="matematicas">Ingrese sugerencias sobre las clases de matemáticas</p>
+                <p id="fisica">Ingrese sugerencias sobre las clases de física</p>
+                <p>Ingrese sugerencias sobre otras clases</p>
+            </center>
+        </div>
+        <div class="estilodeportes_div">
+            <center>
+                <p id="futbol">Ingrese sugerencias sobre las clases fútbol</p>
+                <p id="natacion">Ingrese sugerencias sobre las clases de natación</p>
+                <p>Ingrese sugerencias sobre las clases de baloncesto</p>
+            </center>
+        </div>
+        <br /><br /><br /><br />
+
+        <div id="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Titulo</h1>>/div>
+                    <div class="caja_amarilla"><i class="icono1 fas fa-sim-card"></i></div>
+                </div>
+                <div class="caja_azul_oscuro">
+                    <div class="caja_azul_claro">
+                        <p>Prueba 1</p>
+                        <p>Prueba 2</p>
+                        <p>Prueba 3</p>
+                    </div>
+
+                    <div class="caja_verde">
+                        <p>Párrafo 1</p>
+                        <p>Párrafo 2</p>
+                        <p>Párrafo 3</p>
+                    </div>
+                </div>
+                <div class="caja_roja">
+                    <button class="diseño_boton">Guardar</button>
+                </div>
+                
+            </div>
+            <br /><br /><br /><br /><br /><br />
+    </footer>
+
+</div>
+
+<form>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <label for="numero1" class="form-label">Ingresar número 1</label>
+                <input type="number" class="form-control" id="numero1">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <label for="numero2" class="form-label">Ingresar número 2</label>
+                <input type="number" class="form-control" id="numero2">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <button type="button" class="btn btn-warning" onclick="sumar()">Realizar suma</button>
+            </div>
+        </div> 
+</form>
+
+<!--Pintar etiquetas de forma dinámica-->
+<div id ="caja_dinamica">
+
+</div>
+    <script src = "js/Primer_JavaScript_G14.js";>   </script>
+
+</body>
+
+</html>

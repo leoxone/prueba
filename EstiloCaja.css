@@ -1,0 +1,224 @@
+/*Primer estilo aplicado para un tipo class*/
+.estilo_div{
+    background-color: burlywood;
+    color: darkblue;
+}
+/*Estilo aplicado para un id*/
+#matematicas{
+    color: red;
+}
+#fisica{
+    color:royalblue
+}
+.estilodeportes_div{
+    background-color: rgb(226, 243, 165);
+    color: darkblue;
+}
+/*Estilo aplicado para un id*/
+#futbol{
+    color:magenta
+}
+#natacion{
+    color:tomato
+}
+h1{
+    color:violet; /*Cambio de color de fuente*/
+    background-color:teal;
+    font-family: cursive;
+font-size: 300%;
+}
+
+label{
+    color: #8597DF
+}
+
+div{
+    background-color: cornflowerblue;
+    color:white
+}
+
+.caja_grande{
+    width: 30%;
+    height: 200px;
+    background-color: brown;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+
+.caja_morada{
+    display: flex;
+    background-color: violet;
+}
+.caja_naranja{
+    width: 70%;
+    height: 45px;
+    background-color: orange;
+    text-align: center;
+}
+.caja_amarilla{
+    width: 28%;
+    height: 45px;
+    background-color: yellow;
+    text-align: right;
+    padding: 3px 0px 3px 3px;
+}
+.caja_azul_oscuro{
+    display: flex;
+    background-color: blue;
+}
+.caja_azul_claro{
+    width:48%;
+    height: 100px;
+    background-color: cyan;
+}
+.caja_verde{
+    width:48%;
+    height: 100px;
+    background-color: green;
+}
+.caja_roja{
+    width:100%;
+    height:45px;
+    background-color: red;
+    align-items: left;
+    text-align: right;
+}
+.icono1{
+    font-size: 30px;
+    color:indigo;
+    padding: 5px 5px 0px 10px;
+}
+.diseño_boton{
+    width:30%;
+    height:20px;
+    background-color: orange;
+    color: white;
+    border-color: orange;
+    margin: 20px;    
+}
+.derecha{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}    
+#menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+#menu li a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    color: white;
+    margin: 0px 20px 30px 0px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 14px;
+}
+
+#menu a:hover{
+    background-color: burlywood;
+}
+
+.formulario{
+    width: 50%;
+    background-color: powderblue;
+    text-align: left;
+    padding: 20px 0px 20px 100px;
+}
+
+.diseño_label{
+    display: inline-block;
+    width: 30%;
+    
+}
+
+.diseño_input{
+    display: inline-block;
+    width: 50%;
+}
+
+.boton_formulario{
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.boton_formulario:hover{
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.estilo_tabla{
+    width: 70%;
+    border-collapse: collapse;
+    /*border-style: solid;
+    border-color: black;
+    border: 0.3px solid black;*/
+}
+
+table, th, td{
+    border: 0.3px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 14px;
+}
+
+th{
+    background-color: cornsilk;
+}
+
+/*Hacer lo siguiente si el tamaño máximo del dispositivo es 640px*/ 
+@media(max-width: 640px){
+    header{
+        
+        text-align: center;
+    }
+    
+    #menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu li a{
+        display: block;
+        width: 300px;
+        height: 40px;
+        background-color: crimson;
+    }
+    .formulario{
+        width: 90%;
+        background-color: powderblue;
+        text-align: left;
+        padding: 00px 0px 0px 0px;
+    }
+    .boton_formulario{
+        width: 30%;
+        height: 40px;
+        
+    }
+    .caja_grande{
+        width: 97%;
+        display: block;
+        margin-bottom: 20px;
+    }
+     
+}
+/*Hacer lo siguiente si el tamaño mínimo del dispositivo es 640px y máximo de 1280px*/  
+@media(min-width: 640px) and (max-width: 1280px){
+    .formulario{
+        width: 90%;
+        background-color: powderblue;
+        text-align: left;
+        padding: 00px 0px 0px 0px;
+    }
+}
